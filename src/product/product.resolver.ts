@@ -1,7 +1,6 @@
 import { Resolver, Query, Mutation, Args } from "@nestjs/graphql";
 import { Product, ProductInput } from "./product.entity";
 import { ProductService } from "./product.service";
-import { UseGuards } from "@nestjs/common";
 // import { UseGuards } from "@nestjs/common";
 // import { GQLAuthGuard } from '../auth/GQLAuth.guard';
 // import { UserService } from '../user/user.service';
