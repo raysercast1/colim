@@ -26,7 +26,7 @@ let UserResolver = (() => {
         users() {
             return this.userService.findAll();
         }
-        whoAmI(user) {
+        me(user) {
             return this.userService.findByEmail(user.email);
         }
         createUser(user) {
@@ -45,7 +45,7 @@ let UserResolver = (() => {
         __metadata("design:type", Function),
         __metadata("design:paramtypes", [user_entity_1.User]),
         __metadata("design:returntype", void 0)
-    ], UserResolver.prototype, "whoAmI", null);
+    ], UserResolver.prototype, "me", null);
     __decorate([
         graphql_1.Mutation(() => user_type_1.UserType),
         __param(0, graphql_1.Args({ name: 'user', type: () => user_type_1.UserInput })),

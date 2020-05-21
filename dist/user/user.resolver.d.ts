@@ -5,6 +5,6 @@ export declare class UserResolver {
     private readonly userService;
     constructor(userService: UserService);
     users(): Promise<User[]>;
-    whoAmI(user: User): Promise<User>;
+    me(user: User): Promise<User>;
     createUser(user: UserInput): Promise<User>;
 }

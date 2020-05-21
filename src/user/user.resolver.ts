@@ -14,7 +14,7 @@ export class UserResolver {
     }
 
     @Query(() => UserType)
-    whoAmI(@CurrentUser() user: User) {
+    me(@CurrentUser() user: User) {
         return this.userService.findByEmail(user.email)
     }
 

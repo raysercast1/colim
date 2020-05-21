@@ -7,7 +7,7 @@ exports.typeOrmConfig = {
     port: 5432,
     username: 'colimptexdb',
     password: 'postgres',
-    database: 'colimptexdb2',
+    database: 'colimptex',
     entities: [__dirname + '/../**/*.entity.{js,ts}'],
     synchronize: true,
 };
