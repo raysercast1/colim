@@ -4906,8 +4906,8 @@
         "affectsGlobalScope": false
       },
       "../src/product/product.entity.ts": {
-        "version": "a340ef3d379908964c6c63f892362433b195e94013f318d03a04e0946c131da7",
-        "signature": "f03d38ade2729652d3c508fc7cf160835a346a0d0f49654403053d0b51bedeea",
+        "version": "b931fa06b1ca7cd86f3636e7fd76155deef4d615684b2e066fbf4b2dda05be5e",
+        "signature": "d62f175a8289026973ffa4ce3a4ffc924c8690d2026434635805d5cd5c06e3d6",
         "affectsGlobalScope": false
       },
       "../src/product/product.service.ts": {
