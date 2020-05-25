@@ -3610,11 +3610,6 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
         "affectsGlobalScope": false
       },
-      "../src/product/product.type.ts": {
-        "version": "f60213db408e8544dcd49d2e6ddb7128319f7a289b28e3bebf1a5f17737bb8b6",
-        "signature": "d41bf76068f140712759332d8ee3a9ef9ba48e24e2284ba0a0749c1b28bba1d0",
-        "affectsGlobalScope": false
-      },
       "../node_modules/typeorm/schema-builder/options/TableColumnOptions.d.ts": {
         "version": "222ebf19b1260582fd2023a65c5b7da77f730021f05afb9c4ead4b0b339a8c98",
         "signature": "222ebf19b1260582fd2023a65c5b7da77f730021f05afb9c4ead4b0b339a8c98",
@@ -4906,8 +4901,13 @@
         "affectsGlobalScope": false
       },
       "../src/product/product.entity.ts": {
-        "version": "b931fa06b1ca7cd86f3636e7fd76155deef4d615684b2e066fbf4b2dda05be5e",
-        "signature": "d62f175a8289026973ffa4ce3a4ffc924c8690d2026434635805d5cd5c06e3d6",
+        "version": "aa387814d42480f0929f6276e9573903c907a76392210c5c85480880a3171db6",
+        "signature": "6d8f7d342fb3c8d44a26d88ea797246aa9c5e5a6d1f1630f784701e7f88033a1",
+        "affectsGlobalScope": false
+      },
+      "../src/product/product.type.ts": {
+        "version": "1fb3c19a5e38c9bccbfb17cbff14f249429c95a2ca6a2c617472cb4e0525b8eb",
+        "signature": "d069adca22005e1e6b0750a3112bc5a8e3311d2f2cfc41983e5597c7f41c1a60",
         "affectsGlobalScope": false
       },
       "../src/product/product.service.ts": {
@@ -4981,33 +4981,13 @@
         "affectsGlobalScope": false
       },
       "../src/product/product.module.ts": {
-        "version": "0cf1cd425969754a0e7509235f336d92301a53b116ad9afa047f39c386548ace",
+        "version": "a5549f9f04370074301dd99aebda4da2c6473032a0a011a82cbaa40c118e91c9",
         "signature": "7f8b34d3314e0b7048eab6a82a4f0bf423213dfd64d60f0c5e178bde34c23841",
         "affectsGlobalScope": false
       },
       "../src/config/typeorm.config.ts": {
         "version": "f557ac15b86cd8b37fb53cee88b7086999f1c59b07c0cd1d433d02dead584ae6",
         "signature": "e48d1e836452920a823efe3c1f15dbaa531cbb2c536b3d47ad06ed5201a8b847",
-        "affectsGlobalScope": false
-      },
-      "../src/user/user.entity.ts": {
-        "version": "38d13283a10d187a85295b22fd100fde383ce05c86d5ccb221d68e643931f1ff",
-        "signature": "963833d58ac39899e56cf119cc32e2918ca802ec3835aff662f5ad486f6a99a0",
-        "affectsGlobalScope": false
-      },
-      "../src/user/user.type.ts": {
-        "version": "4744fbe1a803f0e8734975b20bd30691dc6d705f0c144b29e98984e5ea137948",
-        "signature": "cebee8538c7bb19a972ea4a37c8f988b0f0f4bc2506a3765e3b485fc6fb8da83",
-        "affectsGlobalScope": false
-      },
-      "../src/user/user.service.ts": {
-        "version": "f366057959e8c8e7d0411ca292d01d85d9c8868a8718f6c551c97d847b4a91c6",
-        "signature": "02e31da7f1b5594182f79a9b63b9636d8719c95d7acaadb952db21a04b84dc4e",
-        "affectsGlobalScope": false
-      },
-      "../src/auth/auth.type.ts": {
-        "version": "483f363d37c879cdab188514edfd25becbd14129e5d84b51040fae1c303a1563",
-        "signature": "dd754aff02d47552363f4f1e5bc71ee000ddafd9d350b01a9bfdf3fabf6d45f0",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/jsonwebtoken/index.d.ts": {
@@ -5045,9 +5025,19 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
         "affectsGlobalScope": false
       },
-      "../src/auth/auth.service.ts": {
-        "version": "bf885a13754bbaaed3588bf27368608c0ca857ba6a0b7d4d246fd88d5a7567d3",
-        "signature": "97c348129b5fd11f3f22d1df35236f621abdabdb8a666505be124aba7cc19592",
+      "../src/user/user.entity.ts": {
+        "version": "38d13283a10d187a85295b22fd100fde383ce05c86d5ccb221d68e643931f1ff",
+        "signature": "963833d58ac39899e56cf119cc32e2918ca802ec3835aff662f5ad486f6a99a0",
+        "affectsGlobalScope": false
+      },
+      "../src/user/user.type.ts": {
+        "version": "4744fbe1a803f0e8734975b20bd30691dc6d705f0c144b29e98984e5ea137948",
+        "signature": "cebee8538c7bb19a972ea4a37c8f988b0f0f4bc2506a3765e3b485fc6fb8da83",
+        "affectsGlobalScope": false
+      },
+      "../src/user/user.service.ts": {
+        "version": "eef462392378d75ece972fbcabfeb3536c3dc2ab221056a3fe16c6293608e7e7",
+        "signature": "02e31da7f1b5594182f79a9b63b9636d8719c95d7acaadb952db21a04b84dc4e",
         "affectsGlobalScope": false
       },
       "../src/user/CurrentUser.decorator.ts": {
@@ -5061,13 +5051,8 @@
         "affectsGlobalScope": false
       },
       "../src/user/user.module.ts": {
-        "version": "e6999b89f2a279fa288e713fdced3748163e69680cf92c7bea497a7b93dbdd03",
+        "version": "590943f91931326344b6cc1fe492af98855fe1ce3370127aa7c7ed492faf6499",
         "signature": "482b8f0d35a3d453500a15b6c6057c1e4c40baa4329b39da9e1026d8e1de4329",
-        "affectsGlobalScope": false
-      },
-      "../src/auth/auth.constants.ts": {
-        "version": "1fc89d961769a0aa2ee92ae0cd9d056e11cb996e8a10a2c07c1dbbf80e320f45",
-        "signature": "a9a6d1ac7d8e1b27ed750995232ec31127a73624abfe24dcf9111d466d1dff17",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/passport-strategy/index.d.ts": {
@@ -5080,14 +5065,19 @@
         "signature": "e50f9ae34bb92232533e3a32848970dd04f874a8f64d3ae48980e062b6489f26",
         "affectsGlobalScope": false
       },
+      "../src/auth/auth.type.ts": {
+        "version": "483f363d37c879cdab188514edfd25becbd14129e5d84b51040fae1c303a1563",
+        "signature": "dd754aff02d47552363f4f1e5bc71ee000ddafd9d350b01a9bfdf3fabf6d45f0",
+        "affectsGlobalScope": false
+      },
+      "../src/auth/auth.service.ts": {
+        "version": "bf885a13754bbaaed3588bf27368608c0ca857ba6a0b7d4d246fd88d5a7567d3",
+        "signature": "97c348129b5fd11f3f22d1df35236f621abdabdb8a666505be124aba7cc19592",
+        "affectsGlobalScope": false
+      },
       "../src/auth/strategies/local.strategy.ts": {
         "version": "5ffcac30b0cd0c849baf44bbee237a138a00def4784ba72743b302e8fe94ea75",
         "signature": "5107ce5506820fc1c9dc0f31530e270efc46b88b9cad01c31b0637e6da3c1cc6",
-        "affectsGlobalScope": false
-      },
-      "../src/auth/auth.resolver.ts": {
-        "version": "114671b4d02c27cec5bef93a9541cd4e187479be0148936f043f8fca56b33dad",
-        "signature": "283550390e3a1df689812235f98e6c077cbda6a972e95391bfa357dd935ea6c4",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/passport-jwt/index.d.ts": {
@@ -5095,18 +5085,53 @@
         "signature": "d306be26f96b4bd9b279cd7da9d1355d5ce4060a2bb254489c1b95c87057eb38",
         "affectsGlobalScope": false
       },
+      "../src/auth/auth.constants.ts": {
+        "version": "1fc89d961769a0aa2ee92ae0cd9d056e11cb996e8a10a2c07c1dbbf80e320f45",
+        "signature": "a9a6d1ac7d8e1b27ed750995232ec31127a73624abfe24dcf9111d466d1dff17",
+        "affectsGlobalScope": false
+      },
       "../src/auth/strategies/jwt.strategy.ts": {
         "version": "062e6257b94679afb5dbbf9e0a5318375ddc86e025967a4c34c978cf6ec3d9f4",
         "signature": "75d0183aa917e7790f169cec2e18846013be44b210b33c36c5bfedf0cf075e17",
         "affectsGlobalScope": false
       },
+      "../src/auth/auth.resolver.ts": {
+        "version": "114671b4d02c27cec5bef93a9541cd4e187479be0148936f043f8fca56b33dad",
+        "signature": "283550390e3a1df689812235f98e6c077cbda6a972e95391bfa357dd935ea6c4",
+        "affectsGlobalScope": false
+      },
       "../src/auth/auth.module.ts": {
-        "version": "e58f16d4a44dcb618d1bf9520caffd7f9574ae96becde9654c90f90d1793f812",
+        "version": "fa09427c2017f2befcb06886af69be06cd9bdacac4c92d191a9cfe70eba412c9",
         "signature": "a28b5c0c372fb375910b3fe3c3ce4331509bc18ccef7cc39c9ee9d8daf8225d1",
         "affectsGlobalScope": false
       },
+      "../src/provider/provider.entity.ts": {
+        "version": "c56f0f681311e1d09272b5c464676081264e6ba88693643db1f2152a341cf61a",
+        "signature": "0687304c4da86c7284d1a7636af436b66ce3b355e3560f438e4343f4619de27f",
+        "affectsGlobalScope": false
+      },
+      "../src/provider/provider.type.ts": {
+        "version": "8ac15230914f8b6e8b8939c1bf4f9a8716d77c87d1d5d41619dca82bedd8854a",
+        "signature": "60f926cba796e8cea37ef7ddd498080801c02189e02470cda01a2e04b7d3b190",
+        "affectsGlobalScope": false
+      },
+      "../src/provider/provider.service.ts": {
+        "version": "450f3b47e57485f59c306e711358b3d0600697ab9b043b91abd197643b7ed889",
+        "signature": "cb87f3f7cd863136375d67a2c68336f62022f658fd2eb74e67cb8866d92bf4b6",
+        "affectsGlobalScope": false
+      },
+      "../src/provider/provider.resolver.ts": {
+        "version": "0997a7d7ffa13bfe887d434334ac72cf28f704903edef37b73b36672d067f5f4",
+        "signature": "bc2f3534eedaa336f00a4adfc2aace22e7999524a861ca6d72300645ecd667e8",
+        "affectsGlobalScope": false
+      },
+      "../src/provider/provider.module.ts": {
+        "version": "8b2881d82e6c5e995a02db0b2c364a3cf2234ab17a180d67e52f42d6a6fcec2a",
+        "signature": "5a12618efd85abdada77d45e4421fa5845263117b22f3daf48d02753fb2130be",
+        "affectsGlobalScope": false
+      },
       "../src/app.module.ts": {
-        "version": "12d82717816dd45c8b56d9990de427060fcaa2b7ff92f2f2dd1d9054f758a999",
+        "version": "c6831ba47ab74367c1ae002f6d95182f85274246416a447745e118df4d3afd9b",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
@@ -15315,6 +15340,7 @@
         "../src/auth/auth.module.ts",
         "../src/config/typeorm.config.ts",
         "../src/product/product.module.ts",
+        "../src/provider/provider.module.ts",
         "../src/user/user.module.ts"
       ],
       "../src/auth/GQLAuth.guard.ts": [
@@ -15465,6 +15491,56 @@
         "../src/product/product.type.ts"
       ],
       "../src/product/product.type.ts": [
+        "../node_modules/@nestjs/graphql/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/provider/provider.entity.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/provider/provider.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/provider/provider.entity.ts",
+        "../src/provider/provider.resolver.ts",
+        "../src/provider/provider.service.ts"
+      ],
+      "../src/provider/provider.resolver.ts": [
+        "../node_modules/@nestjs/graphql/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/provider/provider.service.ts",
+        "../src/provider/provider.type.ts"
+      ],
+      "../src/provider/provider.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/provider/provider.entity.ts",
+        "../src/provider/provider.type.ts"
+      ],
+      "../src/provider/provider.type.ts": [
         "../node_modules/@nestjs/graphql/index.d.ts",
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -25522,6 +25598,19 @@
         "../src/product/product.entity.ts",
         "../src/product/product.type.ts"
       ],
+      "../src/provider/provider.entity.ts": [
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/provider/provider.resolver.ts": [
+        "../src/provider/provider.entity.ts",
+        "../src/provider/provider.service.ts",
+        "../src/provider/provider.type.ts"
+      ],
+      "../src/provider/provider.service.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/provider/provider.entity.ts",
+        "../src/provider/provider.type.ts"
+      ],
       "../src/user/user.entity.ts": [
         "../node_modules/typeorm/index.d.ts"
       ],
@@ -26597,6 +26686,11 @@
       "../src/product/product.resolver.ts",
       "../src/product/product.service.ts",
       "../src/product/product.type.ts",
+      "../src/provider/provider.entity.ts",
+      "../src/provider/provider.module.ts",
+      "../src/provider/provider.resolver.ts",
+      "../src/provider/provider.service.ts",
+      "../src/provider/provider.type.ts",
       "../src/user/CurrentUser.decorator.ts",
       "../src/user/user.entity.ts",
       "../src/user/user.module.ts",

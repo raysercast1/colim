@@ -1,4 +1,4 @@
-import { Entity, PrimaryColumn, Column, BaseEntity, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, Column, BaseEntity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
 export class Product extends BaseEntity {
@@ -7,10 +7,10 @@ export class Product extends BaseEntity {
     id: string;
 
     @Column()
-    tejido: string;
+    fabric: string;
 
     @Column()
-    fibra: string;
+    fibre: string;
 
     @Column()
     fca: number;
@@ -19,13 +19,13 @@ export class Product extends BaseEntity {
     clv: number;
 
     @Column()
-    clave: string;
+    key: string;
 
     @Column()
     hs: string;
 
     @Column()
-    posicionArc: string;
+    positionArc: string;
 
     @Column()
     acab: number;
@@ -40,31 +40,31 @@ export class Product extends BaseEntity {
     refChina: string;
 
     @Column()
-    refCliente: string;
+    refClient: string;
 
     @Column()
-    etiqueta: string;
+    label: string;
 
     @Column()
-    ancho: string;
+    wide: string;
 
     @Column()
-    peso: string;
+    weight: string;
 
     @Column()
     composition: string;
 
     @Column()
-    rendimiento: number;
+    perfomance: number;
 
     @Column()
-    unidadMedida: string;
+    unitMeasure: string;
 
     @Column()
-    cantMtsFinales: number;
+    cantMtsFinals: number;
 
     @Column()
-    cantKlsFinales: number;
+    cantKlsFinals: number;
 
     @Column()
     cantMtKl: number;

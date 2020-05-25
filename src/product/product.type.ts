@@ -8,17 +8,149 @@ export class ProductType {
     id: string;
 
     @Field()
-    tejido: string;
+    fabric: string;
 
     @Field()
-    fibra: string;
+    fibre: string;
+
+    @Field()
+    fca: number;
+
+    @Field()
+    clv: number;
+
+    @Field()
+    key: string;
+
+    @Field()
+    hs: string;
+
+    @Field()
+    positionArc: string;
+
+    @Field()
+    acab: number;
+
+    @Field()
+    acabado: string;
+
+    @Field()
+    sku: string;
+
+    @Field()
+    refChina: string;
+
+    @Field()
+    refClient: string;
+
+    @Field()
+    label: string;
+
+    @Field()
+    wide: string;
+
+    @Field()
+    weight: string;
+
+    @Field()
+    composition: string;
+
+    @Field()
+    perfomance: number;
+
+    @Field()
+    unitMeasure: string;
+
+    @Field()
+    cantMtsFinals: number;
+
+    @Field()
+    cantKlsFinals: number;
+
+    @Field()
+    cantMtKl: number;
+
+    @Field()
+    capMaxKl: number;
+
+    @Field()
+    mt3: number;
+
+    @Field()
+    portOcupation: number;
 }
 
 @InputType()
 export class ProductInput {
     @Field()
-    tejido: string;
+    fabric: string;
 
     @Field()
-    fibra: string;
+    fibre: string;
+
+    @Field()
+    fca: number;
+
+    @Field()
+    clv: number;
+
+    @Field()
+    key: string;
+
+    @Field()
+    hs: string;
+
+    @Field()
+    positionArc: string;
+
+    @Field()
+    acab: number;
+
+    @Field()
+    acabado: string;
+
+    @Field()
+    sku: string;
+
+    @Field()
+    refChina: string;
+
+    @Field()
+    refClient: string;
+
+    @Field()
+    label: string;
+
+    @Field()
+    wide: string;
+
+    @Field()
+    weight: string;
+
+    @Field()
+    composition: string;
+
+    @Field()
+    perfomance: number;
+
+    @Field()
+    unitMeasure: string;
+
+    @Field()
+    cantMtsFinals: number;
+
+    @Field()
+    cantKlsFinals: number;
+
+    @Field()
+    cantMtKl: number;
+
+    @Field()
+    capMaxKl: number;
+
+    @Field()
+    mt3: number;
+
+    @Field()
+    portOcupation: number;
 }

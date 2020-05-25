@@ -8,14 +8,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AuthModule = void 0;
 const common_1 = require("@nestjs/common");
-const auth_service_1 = require("./auth.service");
+const jwt_1 = require("@nestjs/jwt");
 const user_module_1 = require("../user/user.module");
 const passport_1 = require("@nestjs/passport");
-const jwt_1 = require("@nestjs/jwt");
-const auth_constants_1 = require("./auth.constants");
 const local_strategy_1 = require("./strategies/local.strategy");
-const auth_resolver_1 = require("./auth.resolver");
 const jwt_strategy_1 = require("./strategies/jwt.strategy");
+const auth_service_1 = require("./auth.service");
+const auth_resolver_1 = require("./auth.resolver");
+const auth_constants_1 = require("./auth.constants");
 let AuthModule = (() => {
     let AuthModule = class AuthModule {
     };

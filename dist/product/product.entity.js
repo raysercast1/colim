@@ -21,11 +21,11 @@ let Product = (() => {
     __decorate([
         typeorm_1.Column(),
         __metadata("design:type", String)
-    ], Product.prototype, "tejido", void 0);
+    ], Product.prototype, "fabric", void 0);
     __decorate([
         typeorm_1.Column(),
         __metadata("design:type", String)
-    ], Product.prototype, "fibra", void 0);
+    ], Product.prototype, "fibre", void 0);
     __decorate([
         typeorm_1.Column(),
         __metadata("design:type", Number)
@@ -37,7 +37,7 @@ let Product = (() => {
     __decorate([
         typeorm_1.Column(),
         __metadata("design:type", String)
-    ], Product.prototype, "clave", void 0);
+    ], Product.prototype, "key", void 0);
     __decorate([
         typeorm_1.Column(),
         __metadata("design:type", String)
@@ -45,7 +45,7 @@ let Product = (() => {
     __decorate([
         typeorm_1.Column(),
         __metadata("design:type", String)
-    ], Product.prototype, "posicionArc", void 0);
+    ], Product.prototype, "positionArc", void 0);
     __decorate([
         typeorm_1.Column(),
         __metadata("design:type", Number)
@@ -65,19 +65,19 @@ let Product = (() => {
     __decorate([
         typeorm_1.Column(),
         __metadata("design:type", String)
-    ], Product.prototype, "refCliente", void 0);
+    ], Product.prototype, "refClient", void 0);
     __decorate([
         typeorm_1.Column(),
         __metadata("design:type", String)
-    ], Product.prototype, "etiqueta", void 0);
+    ], Product.prototype, "label", void 0);
     __decorate([
         typeorm_1.Column(),
         __metadata("design:type", String)
-    ], Product.prototype, "ancho", void 0);
+    ], Product.prototype, "wide", void 0);
     __decorate([
         typeorm_1.Column(),
         __metadata("design:type", String)
-    ], Product.prototype, "peso", void 0);
+    ], Product.prototype, "weight", void 0);
     __decorate([
         typeorm_1.Column(),
         __metadata("design:type", String)
@@ -85,19 +85,19 @@ let Product = (() => {
     __decorate([
         typeorm_1.Column(),
         __metadata("design:type", Number)
-    ], Product.prototype, "rendimiento", void 0);
+    ], Product.prototype, "perfomance", void 0);
     __decorate([
         typeorm_1.Column(),
         __metadata("design:type", String)
-    ], Product.prototype, "unidadMedida", void 0);
+    ], Product.prototype, "unitMeasure", void 0);
     __decorate([
         typeorm_1.Column(),
         __metadata("design:type", Number)
-    ], Product.prototype, "cantMtsFinales", void 0);
+    ], Product.prototype, "cantMtsFinals", void 0);
     __decorate([
         typeorm_1.Column(),
         __metadata("design:type", Number)
-    ], Product.prototype, "cantKlsFinales", void 0);
+    ], Product.prototype, "cantKlsFinals", void 0);
     __decorate([
         typeorm_1.Column(),
         __metadata("design:type", Number)

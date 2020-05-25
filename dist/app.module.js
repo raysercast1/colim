@@ -14,6 +14,7 @@ const typeorm_1 = require("@nestjs/typeorm");
 const typeorm_config_1 = require("./config/typeorm.config");
 const auth_module_1 = require("./auth/auth.module");
 const user_module_1 = require("./user/user.module");
+const provider_module_1 = require("./provider/provider.module");
 let AppModule = (() => {
     let AppModule = class AppModule {
     };
@@ -27,7 +28,8 @@ let AppModule = (() => {
                 }),
                 product_module_1.ProductModule,
                 auth_module_1.AuthModule,
-                user_module_1.UserModule
+                user_module_1.UserModule,
+                provider_module_1.ProviderModule
             ],
         })
     ], AppModule);
