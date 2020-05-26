@@ -155,3 +155,82 @@ export class ProductInput {
     @Field()
     portOcupation: number;
 }
+
+@InputType()
+export class UpdateProductInput {
+    @Field()
+    id: string;
+
+    @Field({ nullable: true })
+    fabric?: string;
+
+    @Field({ nullable: true })
+    fibre?: string;
+
+    @Field({ nullable: true })
+    fca?: number;
+
+    @Field({ nullable: true })
+    clv?: number;
+
+    @Field({ nullable: true })
+    key?: string;
+
+    @Field({ nullable: true })
+    hs?: string;
+
+    @Field({ nullable: true })
+    positionArc?: string;
+
+    @Field({ nullable: true })
+    acab?: number;
+
+    @Field({ nullable: true })
+    acabado?: string;
+
+    @Field({ nullable: true })
+    sku?: string;
+
+    @Field({ nullable: true })
+    refChina?: string;
+
+    @Field({ nullable: true })
+    refClient?: string;
+
+    @Field({ nullable: true })
+    label?: string;
+
+    @Field({ nullable: true })
+    wide?: string;
+
+    @Field({ nullable: true })
+    weight?: string;
+
+    @Field({ nullable: true })
+    composition?: string;
+
+    @Field({ nullable: true })
+    perfomance?: number;
+
+    @Field({ nullable: true })
+    unitMeasure?: string;
+
+    @Field({ nullable: true })
+    cantMtsFinals?: number;
+
+    @Field({ nullable: true })
+    cantKlsFinals?: number;
+
+    @Field({ nullable: true })
+    cantMtKl?: number;
+
+    @Field({ nullable: true })
+    capMaxKl?: number;
+
+    @Field({ nullable: true })
+    mt3?: number;
+
+    @Field({ nullable: true })
+    portOcupation?: number;
+
+}

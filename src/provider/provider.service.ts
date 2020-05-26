@@ -1,8 +1,9 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Supplier } from './provider.entity';
 import { Repository } from 'typeorm';
-import { SupplierInput } from './provider.type';
+import { SupplierInput, UpdateSupplierInput } from './provider.type';
+import {getConnection} from "typeorm";
 
 @Injectable()
 export class SupplierService {
@@ -14,6 +15,26 @@ export class SupplierService {
 
     async createSupplier(supplierInput: SupplierInput): Promise<Supplier> {
         return this.supplierRepository.create(supplierInput).save();
+    }
+
+    async updateSupplier(supplierInput: UpdateSupplierInput): Promise<Supplier | undefined> {
+        const supplier = Object.assign(new Supplier, supplierInput)
+
+        await getConnection()
+            .createQueryBuilder()
+            .update(Supplier)
+            .set(supplier)
+            .where("id = :id", {id: supplierInput.id})
+            .execute();
+            
+        return this.supplierRepository.findOne(supplierInput.id)
+        
+    }
+
+    async deleteSupplier(suppliertId: string): Promise<boolean> {
+        const { affected } = await this.supplierRepository.delete({ id: suppliertId });
+        if(affected && affected > 0 ) return true;
+        return false;
     }
 
 }

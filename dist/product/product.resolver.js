@@ -29,6 +29,12 @@ let ProductResolver = (() => {
         createProduct(product) {
             return this.productService.createProduct(product);
         }
+        updateProduct(product) {
+            return this.productService.updateProduct(product);
+        }
+        deleteProduct(productId) {
+            return this.productService.deleteProduct(productId);
+        }
     };
     __decorate([
         graphql_1.Query(() => [product_type_1.ProductType]),
@@ -44,6 +50,20 @@ let ProductResolver = (() => {
         __metadata("design:paramtypes", [product_type_1.ProductInput]),
         __metadata("design:returntype", void 0)
     ], ProductResolver.prototype, "createProduct", null);
+    __decorate([
+        graphql_1.Mutation(() => product_type_1.ProductType),
+        __param(0, graphql_1.Args('product')),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", [product_type_1.UpdateProductInput]),
+        __metadata("design:returntype", void 0)
+    ], ProductResolver.prototype, "updateProduct", null);
+    __decorate([
+        graphql_1.Mutation(() => Boolean),
+        __param(0, graphql_1.Args('productId')),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", [String]),
+        __metadata("design:returntype", void 0)
+    ], ProductResolver.prototype, "deleteProduct", null);
     ProductResolver = __decorate([
         graphql_1.Resolver(() => product_type_1.ProductType),
         __metadata("design:paramtypes", [product_service_1.ProductService])

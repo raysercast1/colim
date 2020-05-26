@@ -1,5 +1,5 @@
 import { Resolver, Query, Mutation, Args } from "@nestjs/graphql";
-import { ClientType, ClientInput } from "./client.type";
+import { ClientType, ClientInput, UpdateClientInput } from "./client.type";
 import { ClientService } from "./client.service";
 
 @Resolver(() => ClientType)
@@ -16,6 +16,16 @@ export class ClientResolver {
     @Mutation(() => ClientType)
     createClient(@Args('client') client: ClientInput) {
         return this.clientService.createClient(client);
+    }
+
+    @Mutation(() => ClientType)
+    updateClient(@Args('client') client: UpdateClientInput) {
+        return this.clientService.updateClient(client);
+    }
+
+    @Mutation(() => Boolean)
+    deleteClient(@Args('clientId') clientId: string){
+        return this.clientService.deleteClient(clientId);
     }
 
 

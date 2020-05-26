@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ProductInput = exports.ProductType = void 0;
+exports.UpdateProductInput = exports.ProductInput = exports.ProductType = void 0;
 const graphql_1 = require("@nestjs/graphql");
 let ProductType = (() => {
     let ProductType = class ProductType {
@@ -225,4 +225,113 @@ let ProductInput = (() => {
     return ProductInput;
 })();
 exports.ProductInput = ProductInput;
+let UpdateProductInput = (() => {
+    let UpdateProductInput = class UpdateProductInput {
+    };
+    __decorate([
+        graphql_1.Field(),
+        __metadata("design:type", String)
+    ], UpdateProductInput.prototype, "id", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", String)
+    ], UpdateProductInput.prototype, "fabric", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", String)
+    ], UpdateProductInput.prototype, "fibre", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", Number)
+    ], UpdateProductInput.prototype, "fca", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", Number)
+    ], UpdateProductInput.prototype, "clv", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", String)
+    ], UpdateProductInput.prototype, "key", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", String)
+    ], UpdateProductInput.prototype, "hs", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", String)
+    ], UpdateProductInput.prototype, "positionArc", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", Number)
+    ], UpdateProductInput.prototype, "acab", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", String)
+    ], UpdateProductInput.prototype, "acabado", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", String)
+    ], UpdateProductInput.prototype, "sku", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", String)
+    ], UpdateProductInput.prototype, "refChina", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", String)
+    ], UpdateProductInput.prototype, "refClient", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", String)
+    ], UpdateProductInput.prototype, "label", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", String)
+    ], UpdateProductInput.prototype, "wide", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", String)
+    ], UpdateProductInput.prototype, "weight", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", String)
+    ], UpdateProductInput.prototype, "composition", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", Number)
+    ], UpdateProductInput.prototype, "perfomance", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", String)
+    ], UpdateProductInput.prototype, "unitMeasure", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", Number)
+    ], UpdateProductInput.prototype, "cantMtsFinals", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", Number)
+    ], UpdateProductInput.prototype, "cantKlsFinals", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", Number)
+    ], UpdateProductInput.prototype, "cantMtKl", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", Number)
+    ], UpdateProductInput.prototype, "capMaxKl", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", Number)
+    ], UpdateProductInput.prototype, "mt3", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", Number)
+    ], UpdateProductInput.prototype, "portOcupation", void 0);
+    UpdateProductInput = __decorate([
+        graphql_1.InputType()
+    ], UpdateProductInput);
+    return UpdateProductInput;
+})();
+exports.UpdateProductInput = UpdateProductInput;
 //# sourceMappingURL=product.type.js.map

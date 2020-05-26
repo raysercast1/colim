@@ -17,6 +17,7 @@ const common_1 = require("@nestjs/common");
 const typeorm_1 = require("@nestjs/typeorm");
 const product_entity_1 = require("./product.entity");
 const typeorm_2 = require("typeorm");
+const typeorm_3 = require("typeorm");
 let ProductService = (() => {
     let ProductService = class ProductService {
         constructor(productRepository) {
@@ -27,6 +28,22 @@ let ProductService = (() => {
         }
         async createProduct(productInput) {
             return this.productRepository.create(productInput).save();
+        }
+        async updateProduct(productInput) {
+            const product = Object.assign(new product_entity_1.Product, productInput);
+            await typeorm_3.getConnection()
+                .createQueryBuilder()
+                .update(product_entity_1.Product)
+                .set(product)
+                .where("id = :id", { id: productInput.id })
+                .execute();
+            return this.productRepository.findOne(productInput.id);
+        }
+        async deleteProduct(productId) {
+            const { affected } = await this.productRepository.delete({ id: productId });
+            if (affected && affected > 0)
+                return true;
+            return false;
         }
     };
     ProductService = __decorate([

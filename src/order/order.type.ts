@@ -33,3 +33,21 @@ export class PurchaseInput {
     @Field()
     subInvoice: string;
 }
+
+@InputType()
+export class UpdatePurchaseInput {
+    @Field({ nullable: true })
+    id: string;
+
+    @Field({ nullable: true })
+    clientId?: string;
+
+    @Field({ nullable: true })
+    sellerId?: string;
+
+    @Field({ nullable: true })
+    containerId?: string;
+
+    @Field({ nullable: true })
+    subInvoice?: string;
+}

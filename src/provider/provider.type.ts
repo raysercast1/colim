@@ -33,3 +33,21 @@ export class SupplierInput {
     @Field()
     address: string;
 }
+
+@InputType()
+export class UpdateSupplierInput { 
+    @Field()
+    id: string;
+
+    @Field({ nullable: true })
+    name?: string;
+
+    @Field({ nullable: true })
+    phone?: string;
+
+    @Field({ nullable: true })
+    email?: string;
+
+    @Field({ nullable: true })
+    address?: string;
+}

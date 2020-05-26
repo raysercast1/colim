@@ -28,3 +28,18 @@ export class ClientInput {
     @Field()
     email: string;
 }
+
+@InputType()
+export class UpdateClientInput {
+    @Field()
+    id: string;
+
+    @Field({ nullable: true })
+    name?: string;
+
+    @Field({ nullable: true })
+    phone?: string;
+
+    @Field({ nullable: true })
+    email?: string;
+}
