@@ -1,4 +1,5 @@
-import { Entity, Column, BaseEntity, PrimaryGeneratedColumn } from 'typeorm';
+import { Entity, Column, BaseEntity, PrimaryGeneratedColumn, ManyToOne } from 'typeorm';
+import { Supplier } from '../provider/provider.entity';
 
 @Entity()
 export class Product extends BaseEntity {
@@ -78,6 +79,6 @@ export class Product extends BaseEntity {
     @Column()
     portOcupation: number;
     
-    /*@ManyToOne()
-    provider: Provider */
+    @ManyToOne(() => Supplier, supplier => supplier.product)
+    supplier: Supplier;
 }

@@ -1,4 +1,5 @@
-import { Entity, PrimaryGeneratedColumn, Column, BaseEntity } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, BaseEntity, ManyToOne } from 'typeorm';
+import { Client } from '../client/client.entity';
 
 @Entity()
 export class Purchase extends BaseEntity {
@@ -19,4 +20,7 @@ export class Purchase extends BaseEntity {
 
     @Column()
     subInvoice: string;
+
+    @ManyToOne(() => Client, client => client.purchase)
+    client: Client;
 }

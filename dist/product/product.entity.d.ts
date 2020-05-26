@@ -1,4 +1,5 @@
 import { BaseEntity } from 'typeorm';
+import { Supplier } from '../provider/provider.entity';
 export declare class Product extends BaseEntity {
     id: string;
     fabric: string;
@@ -25,4 +26,5 @@ export declare class Product extends BaseEntity {
     capMaxKl: number;
     mt3: number;
     portOcupation: number;
+    supplier: Supplier;
 }

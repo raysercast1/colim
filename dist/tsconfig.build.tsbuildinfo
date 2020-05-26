@@ -4905,9 +4905,14 @@
         "signature": "e48d1e836452920a823efe3c1f15dbaa531cbb2c536b3d47ad06ed5201a8b847",
         "affectsGlobalScope": false
       },
+      "../src/provider/provider.entity.ts": {
+        "version": "963e5ac629b6e1a3418041535452d7f992c574712c8677415c9bf18b3d3e96d7",
+        "signature": "091eaea3f69f94a691b96cebec81156ee7ef9697b29be75f180a436f0b602d8f",
+        "affectsGlobalScope": false
+      },
       "../src/product/product.entity.ts": {
-        "version": "aa387814d42480f0929f6276e9573903c907a76392210c5c85480880a3171db6",
-        "signature": "6d8f7d342fb3c8d44a26d88ea797246aa9c5e5a6d1f1630f784701e7f88033a1",
+        "version": "67c2add98cd888ef065ff5c9b56802d2b737d972679b64f9412f214fee84b890",
+        "signature": "9709896c1f88c6c6711b2de47b3eeb810616adc95166c3d2238f652242460af9",
         "affectsGlobalScope": false
       },
       "../src/product/product.type.ts": {
@@ -5105,11 +5110,6 @@
         "signature": "a28b5c0c372fb375910b3fe3c3ce4331509bc18ccef7cc39c9ee9d8daf8225d1",
         "affectsGlobalScope": false
       },
-      "../src/provider/provider.entity.ts": {
-        "version": "c56f0f681311e1d09272b5c464676081264e6ba88693643db1f2152a341cf61a",
-        "signature": "0687304c4da86c7284d1a7636af436b66ce3b355e3560f438e4343f4619de27f",
-        "affectsGlobalScope": false
-      },
       "../src/provider/provider.type.ts": {
         "version": "8ac15230914f8b6e8b8939c1bf4f9a8716d77c87d1d5d41619dca82bedd8854a",
         "signature": "60f926cba796e8cea37ef7ddd498080801c02189e02470cda01a2e04b7d3b190",
@@ -5130,9 +5130,14 @@
         "signature": "5a12618efd85abdada77d45e4421fa5845263117b22f3daf48d02753fb2130be",
         "affectsGlobalScope": false
       },
+      "../src/order/order.entity.ts": {
+        "version": "07ccbf92cd472e640a56814d1357c4c8df5863b062350271ef70b78836461f13",
+        "signature": "4785c6539605946f8e51e69ff466f37344a7b3b8c808a9c1126c8373a4f162fe",
+        "affectsGlobalScope": false
+      },
       "../src/client/client.entity.ts": {
-        "version": "adbe753710ccf61251776bf54df0f8e6b619548cea9fb6fda448d2ffaa00bf7a",
-        "signature": "bb4d1aea5177482b2e81115b727e887f7eb233f184590ecafbbc66e22825bf56",
+        "version": "730794b8f33c6f100c7c1bd4be6c40731e529a954ed29aedc0c9db0b7775baa7",
+        "signature": "20feb08b7efdaa0490a794be72a271cc809582f1cdeaf602ac453e135551f24c",
         "affectsGlobalScope": false
       },
       "../src/client/client.type.ts": {
@@ -5153,11 +5158,6 @@
       "../src/client/client.module.ts": {
         "version": "65ec5f119c744a910b60a1f1e91300db07342a9d1dab84be5e6c05edb211e4c9",
         "signature": "20041a8be4f5775d04860d1ef1e9e6247c50df495ad70d0add2d81558978a47c",
-        "affectsGlobalScope": false
-      },
-      "../src/order/order.entity.ts": {
-        "version": "b2ab02afd8cdaa9f9a2ec63d3ed99708bcb159677264665b15975c6a7aea09be",
-        "signature": "d591a55fdac4d7852c99b3fc6c06bc3a2f8ce94b62a01a62a7f7975095189cb2",
         "affectsGlobalScope": false
       },
       "../src/order/order.type.ts": {
@@ -15487,7 +15487,8 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
-        "../node_modules/typeorm/index.d.ts"
+        "../node_modules/typeorm/index.d.ts",
+        "../src/order/order.entity.ts"
       ],
       "../src/client/client.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -15554,7 +15555,8 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
-        "../node_modules/typeorm/index.d.ts"
+        "../node_modules/typeorm/index.d.ts",
+        "../src/client/client.entity.ts"
       ],
       "../src/order/order.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -15604,7 +15606,8 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
-        "../node_modules/typeorm/index.d.ts"
+        "../node_modules/typeorm/index.d.ts",
+        "../src/provider/provider.entity.ts"
       ],
       "../src/product/product.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -15656,7 +15659,8 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
-        "../node_modules/typeorm/index.d.ts"
+        "../node_modules/typeorm/index.d.ts",
+        "../src/product/product.entity.ts"
       ],
       "../src/provider/provider.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -25735,7 +25739,8 @@
         "../src/auth/auth.service.ts"
       ],
       "../src/client/client.entity.ts": [
-        "../node_modules/typeorm/index.d.ts"
+        "../node_modules/typeorm/index.d.ts",
+        "../src/order/order.entity.ts"
       ],
       "../src/client/client.resolver.ts": [
         "../src/client/client.entity.ts",
@@ -25751,7 +25756,8 @@
         "../node_modules/@nestjs/typeorm/index.d.ts"
       ],
       "../src/order/order.entity.ts": [
-        "../node_modules/typeorm/index.d.ts"
+        "../node_modules/typeorm/index.d.ts",
+        "../src/client/client.entity.ts"
       ],
       "../src/order/order.resolver.ts": [
         "../src/order/order.entity.ts",
@@ -25764,7 +25770,8 @@
         "../src/order/order.type.ts"
       ],
       "../src/product/product.entity.ts": [
-        "../node_modules/typeorm/index.d.ts"
+        "../node_modules/typeorm/index.d.ts",
+        "../src/provider/provider.entity.ts"
       ],
       "../src/product/product.resolver.ts": [
         "../src/product/product.entity.ts",
@@ -25777,7 +25784,8 @@
         "../src/product/product.type.ts"
       ],
       "../src/provider/provider.entity.ts": [
-        "../node_modules/typeorm/index.d.ts"
+        "../node_modules/typeorm/index.d.ts",
+        "../src/product/product.entity.ts"
       ],
       "../src/provider/provider.resolver.ts": [
         "../src/provider/provider.entity.ts",
