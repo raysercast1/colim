@@ -7,6 +7,6 @@ import { ClientResolver } from './client.resolver';
 @Module({
   imports: [TypeOrmModule.forFeature([Client])],
   providers: [ClientService, ClientResolver],
-  exports: [ClientService]
+  exports: [ClientService],
 })
 export class ClientModule {}

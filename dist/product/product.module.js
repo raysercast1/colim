@@ -19,7 +19,7 @@ let ProductModule = (() => {
         common_1.Module({
             imports: [typeorm_1.TypeOrmModule.forFeature([product_entity_1.Product])],
             providers: [product_resolver_1.ProductResolver, product_service_1.ProductService],
-            exports: [product_service_1.ProductService]
+            exports: [product_service_1.ProductService],
         })
     ], ProductModule);
     return ProductModule;

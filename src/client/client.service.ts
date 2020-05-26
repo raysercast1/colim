@@ -12,7 +12,7 @@ export class ClientService {
         return this.clientRepository.find();
     }
 
-    async createClient(clientInput: ClientInput) {
+    async createClient(clientInput: ClientInput): Promise<Client> {
         return this.clientRepository.create(clientInput).save();
     }
 }

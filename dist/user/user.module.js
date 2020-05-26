@@ -19,7 +19,7 @@ let UserModule = (() => {
         common_1.Module({
             imports: [typeorm_1.TypeOrmModule.forFeature([user_entity_1.User])],
             providers: [user_service_1.UserService, user_resolver_1.UserResolver],
-            exports: [user_service_1.UserService]
+            exports: [user_service_1.UserService],
         })
     ], UserModule);
     return UserModule;
