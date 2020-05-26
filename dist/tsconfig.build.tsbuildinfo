@@ -4900,13 +4900,18 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
         "affectsGlobalScope": false
       },
+      "../src/config/typeorm.config.ts": {
+        "version": "f557ac15b86cd8b37fb53cee88b7086999f1c59b07c0cd1d433d02dead584ae6",
+        "signature": "e48d1e836452920a823efe3c1f15dbaa531cbb2c536b3d47ad06ed5201a8b847",
+        "affectsGlobalScope": false
+      },
       "../src/product/product.entity.ts": {
         "version": "aa387814d42480f0929f6276e9573903c907a76392210c5c85480880a3171db6",
         "signature": "6d8f7d342fb3c8d44a26d88ea797246aa9c5e5a6d1f1630f784701e7f88033a1",
         "affectsGlobalScope": false
       },
       "../src/product/product.type.ts": {
-        "version": "1fb3c19a5e38c9bccbfb17cbff14f249429c95a2ca6a2c617472cb4e0525b8eb",
+        "version": "adcd7ee57a9574884f05c5a7cd6a24c7f69b72dc4ddd0a379bcb6345b1caad36",
         "signature": "d069adca22005e1e6b0750a3112bc5a8e3311d2f2cfc41983e5597c7f41c1a60",
         "affectsGlobalScope": false
       },
@@ -4983,11 +4988,6 @@
       "../src/product/product.module.ts": {
         "version": "a5549f9f04370074301dd99aebda4da2c6473032a0a011a82cbaa40c118e91c9",
         "signature": "7f8b34d3314e0b7048eab6a82a4f0bf423213dfd64d60f0c5e178bde34c23841",
-        "affectsGlobalScope": false
-      },
-      "../src/config/typeorm.config.ts": {
-        "version": "f557ac15b86cd8b37fb53cee88b7086999f1c59b07c0cd1d433d02dead584ae6",
-        "signature": "e48d1e836452920a823efe3c1f15dbaa531cbb2c536b3d47ad06ed5201a8b847",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/jsonwebtoken/index.d.ts": {
@@ -5121,8 +5121,8 @@
         "affectsGlobalScope": false
       },
       "../src/provider/provider.resolver.ts": {
-        "version": "0997a7d7ffa13bfe887d434334ac72cf28f704903edef37b73b36672d067f5f4",
-        "signature": "bc2f3534eedaa336f00a4adfc2aace22e7999524a861ca6d72300645ecd667e8",
+        "version": "f2b684a5a546d561fcae8c42c82b761cfc9dd279859224d3248822db02547581",
+        "signature": "d2e696004df74f118456537b0a8e80f876dd8fbc88d1118e2c53db032ed79b52",
         "affectsGlobalScope": false
       },
       "../src/provider/provider.module.ts": {
@@ -5130,8 +5130,33 @@
         "signature": "5a12618efd85abdada77d45e4421fa5845263117b22f3daf48d02753fb2130be",
         "affectsGlobalScope": false
       },
+      "../src/client/client.entity.ts": {
+        "version": "adbe753710ccf61251776bf54df0f8e6b619548cea9fb6fda448d2ffaa00bf7a",
+        "signature": "bb4d1aea5177482b2e81115b727e887f7eb233f184590ecafbbc66e22825bf56",
+        "affectsGlobalScope": false
+      },
+      "../src/client/client.type.ts": {
+        "version": "1f9face8c4ee908fb24a7f31e2351e7f341a94fab0eed4cef0c7bebef2cfe670",
+        "signature": "6f1a36ad8175dce10e07167d80c4edd65bef0428f6c83f2c8d8a9748396240f3",
+        "affectsGlobalScope": false
+      },
+      "../src/client/client.service.ts": {
+        "version": "4d627eb47ddd608d9a10a0179ba9706afc91095dffe2b204a42ce5f5c819b216",
+        "signature": "9c8e9b337b49b97c51ad5fe361dd952b6ccb141ac3f5b5a26d65d63069be2106",
+        "affectsGlobalScope": false
+      },
+      "../src/client/client.resolver.ts": {
+        "version": "6e5cac3f5e8cb641f32ffb6683154dd550cb7ff6933bd7da82ba0d07dba5dc88",
+        "signature": "c5c1cad26951cefcb1cf422c3c8f42244da2ebf50cfb9926ddd9adcb89e5058b",
+        "affectsGlobalScope": false
+      },
+      "../src/client/client.module.ts": {
+        "version": "ed7189c27c1d5ef0a18833affc5520516cc52332b927836f638549850819729f",
+        "signature": "20041a8be4f5775d04860d1ef1e9e6247c50df495ad70d0add2d81558978a47c",
+        "affectsGlobalScope": false
+      },
       "../src/app.module.ts": {
-        "version": "c6831ba47ab74367c1ae002f6d95182f85274246416a447745e118df4d3afd9b",
+        "version": "ad953030dc538e345a1027b7f10a0742ca935786da53eacb416cf397f09f036c",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
@@ -15338,6 +15363,7 @@
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../src/auth/auth.module.ts",
+        "../src/client/client.module.ts",
         "../src/config/typeorm.config.ts",
         "../src/product/product.module.ts",
         "../src/provider/provider.module.ts",
@@ -15428,6 +15454,56 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/passport-local/index.d.ts",
         "../src/auth/auth.service.ts"
+      ],
+      "../src/client/client.entity.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/client/client.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/client/client.entity.ts",
+        "../src/client/client.resolver.ts",
+        "../src/client/client.service.ts"
+      ],
+      "../src/client/client.resolver.ts": [
+        "../node_modules/@nestjs/graphql/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/client/client.service.ts",
+        "../src/client/client.type.ts"
+      ],
+      "../src/client/client.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/client/client.entity.ts",
+        "../src/client/client.type.ts"
+      ],
+      "../src/client/client.type.ts": [
+        "../node_modules/@nestjs/graphql/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
       ],
       "../src/config/typeorm.config.ts": [
         "../node_modules/@nestjs/typeorm/index.d.ts",
@@ -25582,6 +25658,19 @@
         "../node_modules/@types/passport-local/index.d.ts",
         "../src/auth/auth.service.ts"
       ],
+      "../src/client/client.entity.ts": [
+        "../node_modules/typeorm/index.d.ts"
+      ],
+      "../src/client/client.resolver.ts": [
+        "../src/client/client.entity.ts",
+        "../src/client/client.service.ts",
+        "../src/client/client.type.ts"
+      ],
+      "../src/client/client.service.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/client/client.entity.ts",
+        "../src/client/client.type.ts"
+      ],
       "../src/config/typeorm.config.ts": [
         "../node_modules/@nestjs/typeorm/index.d.ts"
       ],
@@ -26679,6 +26768,11 @@
       "../src/auth/auth.type.ts",
       "../src/auth/strategies/jwt.strategy.ts",
       "../src/auth/strategies/local.strategy.ts",
+      "../src/client/client.entity.ts",
+      "../src/client/client.module.ts",
+      "../src/client/client.resolver.ts",
+      "../src/client/client.service.ts",
+      "../src/client/client.type.ts",
       "../src/config/typeorm.config.ts",
       "../src/main.ts",
       "../src/product/product.entity.ts",

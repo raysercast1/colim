@@ -9,12 +9,13 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
 const graphql_1 = require("@nestjs/graphql");
-const product_module_1 = require("./product/product.module");
 const typeorm_1 = require("@nestjs/typeorm");
 const typeorm_config_1 = require("./config/typeorm.config");
+const product_module_1 = require("./product/product.module");
 const auth_module_1 = require("./auth/auth.module");
 const user_module_1 = require("./user/user.module");
 const provider_module_1 = require("./provider/provider.module");
+const client_module_1 = require("./client/client.module");
 let AppModule = (() => {
     let AppModule = class AppModule {
     };
@@ -29,7 +30,8 @@ let AppModule = (() => {
                 product_module_1.ProductModule,
                 auth_module_1.AuthModule,
                 user_module_1.UserModule,
-                provider_module_1.ProviderModule
+                provider_module_1.ProviderModule,
+                client_module_1.ClientModule
             ],
         })
     ], AppModule);

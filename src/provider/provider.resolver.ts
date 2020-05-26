@@ -9,7 +9,7 @@ export class SupplierResolver {
     ) { }
 
     @Query(() => [SupplierType])
-    Suppliers() {
+    suppliers() {
         return this.supplierService.getSuppliers();
     }
 

@@ -1,5 +1,6 @@
 import { ObjectType, Field, ID, InputType } from '@nestjs/graphql';
 
+/*This ObjectType needs a enum type */
 
 @ObjectType()
 export class ProductType { 
