@@ -5116,7 +5116,7 @@
         "affectsGlobalScope": false
       },
       "../src/provider/provider.service.ts": {
-        "version": "649b84f434fe8f0dd9d540847077f4ad1b81ce22a7a00119b010ad6a3c427317",
+        "version": "035cf21e98fb945d50faeaff1b0f6cc94fcdb0c13212be94f171e036c16b4a67",
         "signature": "9bfe819cfacec9c00aa7389fe2afaa119e3291680b28b79e29562b6d5b790498",
         "affectsGlobalScope": false
       },
@@ -5130,9 +5130,14 @@
         "signature": "5a12618efd85abdada77d45e4421fa5845263117b22f3daf48d02753fb2130be",
         "affectsGlobalScope": false
       },
+      "../src/seller/seller.entity.ts": {
+        "version": "7a0f91e0128078082d2e509c2e0831fd5af3588ded922d56177be836d208deeb",
+        "signature": "9afa4577c42ae6c230682cb5819bd39ffb44c4b51399fbb62ce146c0eb138930",
+        "affectsGlobalScope": false
+      },
       "../src/order/order.entity.ts": {
-        "version": "07ccbf92cd472e640a56814d1357c4c8df5863b062350271ef70b78836461f13",
-        "signature": "4785c6539605946f8e51e69ff466f37344a7b3b8c808a9c1126c8373a4f162fe",
+        "version": "5f06d08f26efa10436d3bb7dfbdac834041d1bb4939a00d596491f16c4432bcf",
+        "signature": "8a9e8a00cea34f3c169cfe6dad3ba672932663f22a8bfa57fda2312ef2a01ca3",
         "affectsGlobalScope": false
       },
       "../src/client/client.entity.ts": {
@@ -5180,8 +5185,28 @@
         "signature": "9b2b198dbfcb909c95538f26f07ecfed022ca48dd8f81d8acacb0ba38aecc202",
         "affectsGlobalScope": false
       },
+      "../src/seller/seller.type.ts": {
+        "version": "40df311e18c3d7f6ad87bad424f4dd7c416b161194e5339e21995415ac591ab7",
+        "signature": "38e7ddf97bd33c47d3cc188f5ca570f2d324c2a22d63e0a9bdaefe67d4ebdb10",
+        "affectsGlobalScope": false
+      },
+      "../src/seller/seller.service.ts": {
+        "version": "b682b73f3647a5d5eb877e21db8771bebc0fe1442f2f8a2a191e540ddf5c6d36",
+        "signature": "33919456c8bef6ebb86b6d961397f052e65d3d255abbaf2ca1c4d7e49fc14721",
+        "affectsGlobalScope": false
+      },
+      "../src/seller/seller.resolver.ts": {
+        "version": "24e4827729c6dc6848c2a16f69b9257e0ab6e836cae57e2bf9576c528bd9442d",
+        "signature": "eb79ef458242870d41021d432fb34cc3c0d14712332e88982d115520a191ddae",
+        "affectsGlobalScope": false
+      },
+      "../src/seller/seller.module.ts": {
+        "version": "2c8848d2dd425bcc233007670eb349d1053bce6825071f97b50010d1f5d4972e",
+        "signature": "12b35b150cd76c4063a456a9190d0e504598a8f2e4edf8a18022da36d53fdcc5",
+        "affectsGlobalScope": false
+      },
       "../src/app.module.ts": {
-        "version": "5aad41e4d838fd0e1e4e7e5714973981560edd756e7b5405872c7c86fcd0bc4b",
+        "version": "60cd2aa47029e8b947ead79f7930b99c7f6fae0756a6985f0d3dc04e05d3f251",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
@@ -15393,6 +15418,7 @@
         "../src/order/order.module.ts",
         "../src/product/product.module.ts",
         "../src/provider/provider.module.ts",
+        "../src/seller/seller.module.ts",
         "../src/user/user.module.ts"
       ],
       "../src/auth/GQLAuth.guard.ts": [
@@ -15556,7 +15582,8 @@
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/typeorm/index.d.ts",
-        "../src/client/client.entity.ts"
+        "../src/client/client.entity.ts",
+        "../src/seller/seller.entity.ts"
       ],
       "../src/order/order.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -15697,6 +15724,57 @@
         "../src/provider/provider.type.ts"
       ],
       "../src/provider/provider.type.ts": [
+        "../node_modules/@nestjs/graphql/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/seller/seller.entity.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/order/order.entity.ts"
+      ],
+      "../src/seller/seller.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/seller/seller.entity.ts",
+        "../src/seller/seller.resolver.ts",
+        "../src/seller/seller.service.ts"
+      ],
+      "../src/seller/seller.resolver.ts": [
+        "../node_modules/@nestjs/graphql/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/seller/seller.service.ts",
+        "../src/seller/seller.type.ts"
+      ],
+      "../src/seller/seller.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/typeorm/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/typeorm/index.d.ts",
+        "../src/seller/seller.entity.ts",
+        "../src/seller/seller.type.ts"
+      ],
+      "../src/seller/seller.type.ts": [
         "../node_modules/@nestjs/graphql/index.d.ts",
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -25757,7 +25835,8 @@
       ],
       "../src/order/order.entity.ts": [
         "../node_modules/typeorm/index.d.ts",
-        "../src/client/client.entity.ts"
+        "../src/client/client.entity.ts",
+        "../src/seller/seller.entity.ts"
       ],
       "../src/order/order.resolver.ts": [
         "../src/order/order.entity.ts",
@@ -25796,6 +25875,20 @@
         "../node_modules/typeorm/index.d.ts",
         "../src/provider/provider.entity.ts",
         "../src/provider/provider.type.ts"
+      ],
+      "../src/seller/seller.entity.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/order/order.entity.ts"
+      ],
+      "../src/seller/seller.resolver.ts": [
+        "../src/seller/seller.entity.ts",
+        "../src/seller/seller.service.ts",
+        "../src/seller/seller.type.ts"
+      ],
+      "../src/seller/seller.service.ts": [
+        "../node_modules/typeorm/index.d.ts",
+        "../src/seller/seller.entity.ts",
+        "../src/seller/seller.type.ts"
       ],
       "../src/user/user.entity.ts": [
         "../node_modules/typeorm/index.d.ts"
@@ -26887,6 +26980,11 @@
       "../src/provider/provider.resolver.ts",
       "../src/provider/provider.service.ts",
       "../src/provider/provider.type.ts",
+      "../src/seller/seller.entity.ts",
+      "../src/seller/seller.module.ts",
+      "../src/seller/seller.resolver.ts",
+      "../src/seller/seller.service.ts",
+      "../src/seller/seller.type.ts",
       "../src/user/CurrentUser.decorator.ts",
       "../src/user/user.entity.ts",
       "../src/user/user.module.ts",
