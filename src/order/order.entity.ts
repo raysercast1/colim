@@ -1,6 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column, BaseEntity, ManyToOne } from 'typeorm';
 import { Client } from '../client/client.entity';
 import { Seller } from 'src/seller/seller.entity';
+import { Container } from 'src/container/container.entity';
 
 @Entity()
 export class Purchase extends BaseEntity {
@@ -27,4 +28,7 @@ export class Purchase extends BaseEntity {
 
     @ManyToOne(() => Seller, seller => seller.purchase)
     seller: Seller;
+    
+    @ManyToOne(() => Container, container => container.purchase)
+    container: Container;
 }

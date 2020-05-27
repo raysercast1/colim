@@ -18,6 +18,7 @@ const provider_module_1 = require("./provider/provider.module");
 const client_module_1 = require("./client/client.module");
 const order_module_1 = require("./order/order.module");
 const seller_module_1 = require("./seller/seller.module");
+const container_module_1 = require("./container/container.module");
 let AppModule = (() => {
     let AppModule = class AppModule {
     };
@@ -35,7 +36,8 @@ let AppModule = (() => {
                 provider_module_1.ProviderModule,
                 client_module_1.ClientModule,
                 order_module_1.OrderModule,
-                seller_module_1.SellerModule
+                seller_module_1.SellerModule,
+                container_module_1.ContainerModule
             ],
         })
     ], AppModule);
