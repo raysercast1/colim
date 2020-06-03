@@ -5226,8 +5226,8 @@
         "affectsGlobalScope": false
       },
       "../src/container/container.type.ts": {
-        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "version": "3b57d00394223caf9f346415a2ffe38407b4d975ad526525deedeb88fb505cb1",
+        "signature": "291d9e7a31d35ab34d296441b5b752bc9dc001e5964451b51b05782ae71aaf9f",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/anymatch/index.d.ts": {
@@ -15602,6 +15602,7 @@
         "../src/container/container.entity.ts"
       ],
       "../src/container/container.type.ts": [
+        "../node_modules/@nestjs/graphql/index.d.ts",
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
