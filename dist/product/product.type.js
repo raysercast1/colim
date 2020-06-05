@@ -219,6 +219,10 @@ let ProductInput = (() => {
         graphql_1.Field(),
         __metadata("design:type", Number)
     ], ProductInput.prototype, "portOcupation", void 0);
+    __decorate([
+        graphql_1.Field(),
+        __metadata("design:type", String)
+    ], ProductInput.prototype, "supplierId", void 0);
     ProductInput = __decorate([
         graphql_1.InputType()
     ], ProductInput);
@@ -328,6 +332,10 @@ let UpdateProductInput = (() => {
         graphql_1.Field({ nullable: true }),
         __metadata("design:type", Number)
     ], UpdateProductInput.prototype, "portOcupation", void 0);
+    __decorate([
+        graphql_1.Field({ nullable: true }),
+        __metadata("design:type", String)
+    ], UpdateProductInput.prototype, "supplierId", void 0);
     UpdateProductInput = __decorate([
         graphql_1.InputType()
     ], UpdateProductInput);

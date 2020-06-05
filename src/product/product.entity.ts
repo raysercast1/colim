@@ -78,6 +78,9 @@ export class Product extends BaseEntity {
 
     @Column()
     portOcupation: number;
+
+    @Column()
+    supplierId: string;
     
     @ManyToOne(() => Supplier, supplier => supplier.product)
     supplier: Supplier;

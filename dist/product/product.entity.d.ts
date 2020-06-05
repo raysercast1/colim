@@ -26,5 +26,6 @@ export declare class Product extends BaseEntity {
     capMaxKl: number;
     mt3: number;
     portOcupation: number;
+    supplierId: string;
     supplier: Supplier;
 }

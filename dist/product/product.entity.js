@@ -116,6 +116,10 @@ let Product = (() => {
         __metadata("design:type", Number)
     ], Product.prototype, "portOcupation", void 0);
     __decorate([
+        typeorm_1.Column(),
+        __metadata("design:type", String)
+    ], Product.prototype, "supplierId", void 0);
+    __decorate([
         typeorm_1.ManyToOne(() => provider_entity_1.Supplier, supplier => supplier.product),
         __metadata("design:type", provider_entity_1.Supplier)
     ], Product.prototype, "supplier", void 0);
