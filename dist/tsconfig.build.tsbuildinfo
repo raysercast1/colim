@@ -4986,7 +4986,7 @@
         "affectsGlobalScope": false
       },
       "../src/product/product.resolver.ts": {
-        "version": "2fd840add0af84fb481d7569835e4f791c8cdb4216857ce70c7ab59a70f1ff77",
+        "version": "64a3356894f48b543cdea30dd098700516fb8f97619c2e1aefc9624c1b4a906a",
         "signature": "7e44263165d79f5c2456da82deb947e75dd302d605bd1d0b3bee7ed7ab83edac",
         "affectsGlobalScope": false
       },

@@ -16,7 +16,6 @@ exports.ProductResolver = void 0;
 const graphql_1 = require("@nestjs/graphql");
 const product_type_1 = require("./product.type");
 const product_service_1 = require("./product.service");
-const common_1 = require("@nestjs/common");
 const GQLAuth_guard_1 = require("../auth/GQLAuth.guard");
 let ProductResolver = (() => {
     let ProductResolver = class ProductResolver {
@@ -43,7 +42,6 @@ let ProductResolver = (() => {
         __metadata("design:returntype", void 0)
     ], ProductResolver.prototype, "products", null);
     __decorate([
-        common_1.UseGuards(GQLAuth_guard_1.GQLAuthGuard),
         graphql_1.Mutation(() => product_type_1.ProductType),
         __param(0, graphql_1.Args('product')),
         __metadata("design:type", Function),

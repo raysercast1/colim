@@ -16,7 +16,7 @@ export class ProductResolver {
         return this.productService.getProducts();
     }
 
-    @UseGuards(GQLAuthGuard)
+    // @UseGuards(GQLAuthGuard)
     @Mutation(() => ProductType)
     createProduct(@Args('product') product: ProductInput) {
         return this.productService.createProduct(product);
