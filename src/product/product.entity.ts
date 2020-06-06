@@ -80,7 +80,7 @@ export class Product extends BaseEntity {
     portOcupation: number;
 
     @Column()
-    supplierId: string;
+    supplierId: number;
     
     @ManyToOne(() => Supplier, supplier => supplier.product)
     supplier: Supplier;

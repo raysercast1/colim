@@ -3,7 +3,7 @@ import { Product } from '../product/product.entity';
 
 
 @Entity()
-@Unique(['email'])
+@Unique(['email'/*,name */])
 export class Supplier extends BaseEntity {
 
     @PrimaryGeneratedColumn()

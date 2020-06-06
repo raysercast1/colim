@@ -156,7 +156,7 @@ export class ProductInput {
     portOcupation: number;
 
     @Field()
-    supplierId: string;
+    supplierId: number;
 }
 
 @InputType()
@@ -237,6 +237,6 @@ export class UpdateProductInput {
     portOcupation?: number;
 
     @Field({ nullable: true })
-    supplierId?: string;
+    supplierId?: number;
 
 }

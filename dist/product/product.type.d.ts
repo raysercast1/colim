@@ -50,7 +50,7 @@ export declare class ProductInput {
     capMaxKl: number;
     mt3: number;
     portOcupation: number;
-    supplierId: string;
+    supplierId: number;
 }
 export declare class UpdateProductInput {
     id: string;
@@ -78,5 +78,5 @@ export declare class UpdateProductInput {
     capMaxKl?: number;
     mt3?: number;
     portOcupation?: number;
-    supplierId?: string;
+    supplierId?: number;
 }

@@ -117,7 +117,7 @@ let Product = (() => {
     ], Product.prototype, "portOcupation", void 0);
     __decorate([
         typeorm_1.Column(),
-        __metadata("design:type", String)
+        __metadata("design:type", Number)
     ], Product.prototype, "supplierId", void 0);
     __decorate([
         typeorm_1.ManyToOne(() => provider_entity_1.Supplier, supplier => supplier.product),
