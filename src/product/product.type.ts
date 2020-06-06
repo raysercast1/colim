@@ -79,6 +79,9 @@ export class ProductType {
 
     @Field()
     portOcupation: number;
+
+    @Field()
+    supplierId: number;
 }
 
 @InputType()

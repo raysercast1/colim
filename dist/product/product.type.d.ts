@@ -24,6 +24,7 @@ export declare class ProductType {
     capMaxKl: number;
     mt3: number;
     portOcupation: number;
+    supplierId: number;
 }
 export declare class ProductInput {
     fabric: string;

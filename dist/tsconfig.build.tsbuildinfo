@@ -4916,8 +4916,8 @@
         "affectsGlobalScope": false
       },
       "../src/product/product.type.ts": {
-        "version": "4a1bcb43cf3f2636b44e0fb245e93a1efba889bd7ec7bf383985ded64f533444",
-        "signature": "12124d0265adbc6ef89a170a5ca4e90aa4def2dfaa09d7d56aa889ea407c2669",
+        "version": "f2e1bb05a583d4ef908011a45228320be7bec58ef8c30e52380369b8d833d99d",
+        "signature": "6aaef2d6da4751f17df3da43a2f2cf5bc37758697108798478aee1d74046aa47",
         "affectsGlobalScope": false
       },
       "../src/product/product.service.ts": {

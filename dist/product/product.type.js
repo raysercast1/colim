@@ -114,6 +114,10 @@ let ProductType = (() => {
         graphql_1.Field(),
         __metadata("design:type", Number)
     ], ProductType.prototype, "portOcupation", void 0);
+    __decorate([
+        graphql_1.Field(),
+        __metadata("design:type", Number)
+    ], ProductType.prototype, "supplierId", void 0);
     ProductType = __decorate([
         graphql_1.ObjectType()
     ], ProductType);
