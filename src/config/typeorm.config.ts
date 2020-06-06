@@ -19,11 +19,5 @@ export const typeOrmConfig: TypeOrmModuleOptions = {
     password: password,
     database: database,
     entities: [__dirname + '/../**/*.entity.{js,ts}'],
-    migrationsTableName: 'migrations_typeorm',
-    migrations: ['dist/migrations/*{.ts,.js}'],
-    migrationsRun: true,
-    // // cli: {
-    // //     migrationsDir: 'migration'
-    // // },
     synchronize: synchronize,
 }

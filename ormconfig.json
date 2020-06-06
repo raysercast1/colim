@@ -1,0 +1,16 @@
+{
+
+    "type": "postgres",
+    "host": "172.17.0.2",
+    "port": 5432,
+    "username": "colimptexdb",
+    "password": "postgres",
+    "database": "colimptex",
+    "entities": ["__dirname + '/../**/*.entity.{js,ts}'"],
+    "migrationsTableName": "migrations_typeorm",
+    "migrations": ["dist/migrations/*{.ts,.js}"],
+    "cli": {
+        "migrationsDir": "migration"
+    },
+    "synchronize": false
+}
