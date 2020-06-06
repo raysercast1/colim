@@ -4900,8 +4900,13 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
         "affectsGlobalScope": false
       },
+      "../../../node_modules/@types/config/index.d.ts": {
+        "version": "a2841f04e5d6e69661720db979db826a07dd2c2c6b170fb5fb8ff2680692e922",
+        "signature": "a2841f04e5d6e69661720db979db826a07dd2c2c6b170fb5fb8ff2680692e922",
+        "affectsGlobalScope": false
+      },
       "../src/config/typeorm.config.ts": {
-        "version": "f557ac15b86cd8b37fb53cee88b7086999f1c59b07c0cd1d433d02dead584ae6",
+        "version": "6fe377061364f29a760ce3a1869e294e565962950e8e5da160ec684cea80b842",
         "signature": "e48d1e836452920a823efe3c1f15dbaa531cbb2c536b3d47ad06ed5201a8b847",
         "affectsGlobalScope": false
       },
@@ -5236,7 +5241,7 @@
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
-        "version": "e25d9bd8f80b6ffbcc8826ed1b407e747e4fbe346c5bab62cbe5837da4eeb189",
+        "version": "1ac6da54fc42f4bf070c25b360b7e06d555aed082e9451c3d483864821b6378b",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -15585,6 +15590,7 @@
         "../node_modules/@types/node/util.d.ts"
       ],
       "../src/config/typeorm.config.ts": [
+        "../../../node_modules/@types/config/index.d.ts",
         "../node_modules/@nestjs/typeorm/index.d.ts",
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -15644,6 +15650,7 @@
         "../node_modules/@types/node/util.d.ts"
       ],
       "../src/main.ts": [
+        "../../../node_modules/@types/config/index.d.ts",
         "../node_modules/@nestjs/core/index.d.ts",
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -15915,6 +15922,13 @@
       ],
       "../src/user/user.type.ts": [
         "../node_modules/@nestjs/graphql/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../../../node_modules/@types/config/index.d.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -25995,6 +26009,13 @@
         "../node_modules/typeorm/index.d.ts",
         "../src/user/user.entity.ts",
         "../src/user/user.type.ts"
+      ],
+      "../../../node_modules/@types/config/index.d.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -27088,7 +27109,8 @@
       "../src/user/user.module.ts",
       "../src/user/user.resolver.ts",
       "../src/user/user.service.ts",
-      "../src/user/user.type.ts"
+      "../src/user/user.type.ts",
+      "../../../node_modules/@types/config/index.d.ts"
     ]
   },
   "version": "3.9.2"
