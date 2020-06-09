@@ -1,11 +1,12 @@
-import { Entity, Column, BaseEntity, PrimaryGeneratedColumn, ManyToOne } from 'typeorm';
+import { Entity, Column, BaseEntity, PrimaryGeneratedColumn, ManyToOne, OneToMany } from 'typeorm';
 import { Supplier } from '../provider/provider.entity';
+import { PurchaseDetail } from 'src/order-detail/order-detail.entity';
 
 @Entity()
 export class Product extends BaseEntity {
 
     @PrimaryGeneratedColumn()
-    id: string;
+    id: number;
 
     @Column()
     fabric: string;
@@ -36,6 +37,18 @@ export class Product extends BaseEntity {
 
     @Column()
     sku: string;
+
+    @Column()
+    csf: number;
+
+    @Column()
+    crf: number;
+
+    @Column()
+    pvp: number;
+
+    @Column()
+    psv: number;
 
     @Column()
     refChina: string;
@@ -81,7 +94,13 @@ export class Product extends BaseEntity {
 
     @Column()
     supplierId: number;
+
+    @Column({nullable: true})
+    purchaseDetailId: number;
     
     @ManyToOne(() => Supplier, supplier => supplier.product)
     supplier: Supplier;
+
+    @OneToMany(() => PurchaseDetail, purchaseDetail => purchaseDetail.product)
+    purchaseDetail: PurchaseDetail[];
 }

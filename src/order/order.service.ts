@@ -7,14 +7,14 @@ import {getConnection} from "typeorm";
 
 @Injectable()
 export class PurchaseService {
-    constructor(@InjectRepository(Purchase) private readonly purchaseRepository: Repository<Purchase>) {}
+    constructor(@InjectRepository(Purchase) private readonly purchaseRepository: Repository<Purchase>) { }
 
     async getPurchases(): Promise<Purchase[]> {
-        return this.purchaseRepository.find();
+        return await this.purchaseRepository.find();
     }
 
     async createPurchase(purchaseInput: PurchaseInput): Promise<Purchase> {
-        return this.purchaseRepository.create(purchaseInput).save();
+        return await this.purchaseRepository.create(purchaseInput).save();
     }
 
     async updatePurchase(purchaseInput: UpdatePurchaseInput): Promise<Purchase | undefined> {        
@@ -30,7 +30,7 @@ export class PurchaseService {
         return this.purchaseRepository.findOne(purchaseInput.id)
     }
 
-    async deletePurchase(purchaseId: string): Promise<boolean> {
+    async deletePurchase(purchaseId: number): Promise<boolean> {
         const { affected } = await this.purchaseRepository.delete({ id: purchaseId });
         if(affected && affected > 0 ) return true;
         return false;

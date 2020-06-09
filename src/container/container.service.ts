@@ -29,7 +29,7 @@ export class ContainerService {
         return this.containerRepository.findOne(containerInput.id);
     }
 
-    async deleteContainer(containerId: string): Promise<boolean> {
+    async deleteContainer(containerId: number): Promise<boolean> {
         const { affected } = await this.containerRepository.delete({ id:containerId });
         if(affected && affected > 0) return true;
         return false;

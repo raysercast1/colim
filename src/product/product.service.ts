@@ -31,7 +31,7 @@ export class ProductService {
         
     }
 
-    async deleteProduct(productId: string): Promise<boolean> {
+    async deleteProduct(productId: number): Promise<boolean> {
         const { affected } = await this.productRepository.delete({ id: productId });
         if(affected && affected > 0 ) return true;
         return false;

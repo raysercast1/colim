@@ -28,7 +28,7 @@ export class ProductResolver {
     }
 
     @Mutation(() => Boolean)
-    deleteProduct(@Args('productId') productId: string) {
+    deleteProduct(@Args('productId') productId: number) {
         return this.productService.deleteProduct(productId);
     }
 }

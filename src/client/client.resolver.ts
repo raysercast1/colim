@@ -24,7 +24,7 @@ export class ClientResolver {
     }
 
     @Mutation(() => Boolean)
-    deleteClient(@Args('clientId') clientId: string){
+    deleteClient(@Args('clientId') clientId: number){
         return this.clientService.deleteClient(clientId);
     }
 

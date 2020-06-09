@@ -24,7 +24,7 @@ export class SellerResolver {
     }
 
     @Mutation(() => Boolean)
-    deleteSeller(@Args('sellerId') sellerId: string) {
+    deleteSeller(@Args('sellerId') sellerId: number) {
         return this.sellerService.deleteSeller(sellerId);
     }
 }

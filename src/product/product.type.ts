@@ -6,7 +6,7 @@ import { ObjectType, Field, ID, InputType } from '@nestjs/graphql';
 export class ProductType { 
 
     @Field(() => ID)
-    id: string;
+    id: number;
 
     @Field()
     fabric: string;
@@ -37,6 +37,18 @@ export class ProductType {
 
     @Field()
     sku: string;
+
+    @Field()
+    csf: number;
+
+    @Field()
+    crf: number;
+
+    @Field()
+    pvp: number;
+
+    @Field()
+    psv: number;
 
     @Field()
     refChina: string;
@@ -79,6 +91,9 @@ export class ProductType {
 
     @Field()
     portOcupation: number;
+
+    @Field({nullable: true})
+    purchaseDetailId?: number;
 
     @Field()
     supplierId: number;
@@ -117,6 +132,18 @@ export class ProductInput {
     sku: string;
 
     @Field()
+    csf: number;
+
+    @Field()
+    crf: number;
+
+    @Field()
+    pvp: number;
+
+    @Field()
+    psv: number;
+
+    @Field()
     refChina: string;
 
     @Field()
@@ -158,6 +185,9 @@ export class ProductInput {
     @Field()
     portOcupation: number;
 
+    @Field({nullable: true})
+    purchaseDetailId?: number;
+
     @Field()
     supplierId: number;
 }
@@ -165,7 +195,7 @@ export class ProductInput {
 @InputType()
 export class UpdateProductInput {
     @Field()
-    id: string;
+    id: number;
 
     @Field({ nullable: true })
     fabric?: string;
@@ -196,6 +226,18 @@ export class UpdateProductInput {
 
     @Field({ nullable: true })
     sku?: string;
+
+    @Field({ nullable: true })
+    csf?: number;
+
+    @Field({ nullable: true })
+    crf?: number;
+
+    @Field({ nullable: true })
+    pvp?: number;
+
+    @Field({ nullable: true })
+    psv?: number;
 
     @Field({ nullable: true })
     refChina?: string;
@@ -238,6 +280,9 @@ export class UpdateProductInput {
 
     @Field({ nullable: true })
     portOcupation?: number;
+
+    @Field({nullable: true})
+    purchaseDetailId?: number;
 
     @Field({ nullable: true })
     supplierId?: number;

@@ -24,7 +24,7 @@ export class ContainerResolver {
     }
 
     @Mutation(() => Boolean)
-    deleteContainer(@Args('containerId') containerId: string) {
+    deleteContainer(@Args('containerId') containerId: number) {
         return this.containerService.deleteContainer(containerId);
     }
 }

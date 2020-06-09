@@ -10,6 +10,8 @@ import { ClientModule } from './client/client.module';
 import { OrderModule } from './order/order.module';
 import { SellerModule } from './seller/seller.module';
 import { ContainerModule } from './container/container.module';
+import { OrderDetailModule } from './order-detail/order-detail.module';
+import { ColorModule } from './color/color.module';
 
 @Module({
   imports: [
@@ -25,7 +27,9 @@ import { ContainerModule } from './container/container.module';
     ClientModule,
     OrderModule,
     SellerModule,
-    ContainerModule
+    ContainerModule,
+    OrderDetailModule,
+    ColorModule
   ],
 })
 export class AppModule {}

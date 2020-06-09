@@ -24,7 +24,7 @@ export class PurchaseResolver {
     }
 
     @Mutation(() => Boolean)
-    deletePurchase(@Args('purchaseId') purchaseId: string) {
+    deletePurchase(@Args('purchaseId') purchaseId: number) {
         return this.purchaseService.deletePurchase(purchaseId);
     }
 

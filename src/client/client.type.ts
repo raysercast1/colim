@@ -4,7 +4,7 @@ import { ObjectType, Field, ID, InputType } from '@nestjs/graphql';
 @ObjectType()
 export class ClientType {
     @Field(() => ID)
-    id: string;
+    id: number;
 
     @Field()
     name: string;
@@ -32,7 +32,7 @@ export class ClientInput {
 @InputType()
 export class UpdateClientInput {
     @Field()
-    id: string;
+    id: number;
 
     @Field({ nullable: true })
     name?: string;

@@ -30,7 +30,7 @@ export class ClientService {
         return this.clientRepository.findOne(clientInput.id)
     }
 
-    async deleteClient(clientId: string): Promise<boolean> {
+    async deleteClient(clientId: number): Promise<boolean> {
         const { affected } = await this.clientRepository.delete({ id: clientId });
         if(affected && affected > 0 ) return true;
         return false;

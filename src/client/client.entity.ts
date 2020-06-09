@@ -2,10 +2,10 @@ import { Entity, Unique, PrimaryGeneratedColumn, Column, BaseEntity, OneToMany }
 import { Purchase } from '../order/order.entity';
 
 @Entity()
-@Unique(['email'])
+@Unique(['email', 'name'])
 export class Client extends BaseEntity {
     @PrimaryGeneratedColumn()
-    id: string;
+    id: number;
 
     @Column()
     name: string;

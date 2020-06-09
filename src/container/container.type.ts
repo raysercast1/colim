@@ -3,7 +3,7 @@ import { ObjectType, Field, ID, InputType } from '@nestjs/graphql';
 @ObjectType()
 export class ContainerType {
     @Field(() => ID)
-    id: string;
+    id: number;
 
     @Field()
     name: string;
@@ -18,7 +18,7 @@ export class ContainerInput {
 @InputType()
 export class UpdateContainerInput {
     @Field()
-    id: string;
+    id: number;
 
     @Field({ nullable: true })
     name?: string

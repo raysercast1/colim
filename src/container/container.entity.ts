@@ -4,7 +4,7 @@ import { Purchase } from '../order/order.entity';
 @Entity()
 export class Container extends BaseEntity {
     @PrimaryGeneratedColumn()
-    id: string;
+    id: number;
 
     @Column()
     name: string;

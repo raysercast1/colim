@@ -30,7 +30,7 @@ export class SupplierService {
         
     }
 
-    async deleteSupplier(suppliertId: string): Promise<boolean> {
+    async deleteSupplier(suppliertId: number): Promise<boolean> {
         const { affected } = await this.supplierRepository.delete({ id: suppliertId });
         if(affected && affected > 0 ) return true;
         return false;

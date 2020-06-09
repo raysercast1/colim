@@ -1,11 +1,12 @@
-import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
+import { BaseEntity, Entity, PrimaryGeneratedColumn, Column, OneToMany, Unique } from 'typeorm';
 import { Purchase } from '../order/order.entity';
 
 @Entity()
+@Unique(['name', 'email'])
 export class Seller extends BaseEntity {
 
     @PrimaryGeneratedColumn()
-    id: string;
+    id: number;
 
     @Column()
     name: string;

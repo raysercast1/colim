@@ -24,7 +24,7 @@ export class SupplierResolver {
     }
 
     @Mutation(() => Boolean)
-    deleteSupplier(@Args('supplierId') supplierId: string) {
+    deleteSupplier(@Args('supplierId') supplierId: number) {
         return this.supplierService.deleteSupplier(supplierId);
     }
 

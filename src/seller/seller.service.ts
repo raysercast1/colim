@@ -29,7 +29,7 @@ export class SellerService {
         return this.sellerRepository.findOne(sellerInput.id)
     }
 
-    async deleteSeller(sellerId: string): Promise<boolean> {
+    async deleteSeller(sellerId: number): Promise<boolean> {
         const { affected } = await this.sellerRepository.delete({id: sellerId});
         if( affected && affected > 0 ) return true;
         return false;
