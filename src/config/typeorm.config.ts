@@ -13,11 +13,11 @@ const synchronize: boolean = config.get('db.synchronize');
 export const typeOrmConfig: TypeOrmModuleOptions = {
 
     type: 'postgres',
-    host: '127.0.0.1',
-    port: 5432,
-    username: 'colimptexdb',
-    password: 'postgres',
-    database: 'postgres',
+    host: host,
+    port: port,
+    username: username,
+    password: password,
+    database: database,
     entities: [__dirname + '/../**/*.entity.{js,ts}'],
-    synchronize: true,
+    synchronize: synchronize,
 }

@@ -4926,7 +4926,7 @@
         "affectsGlobalScope": false
       },
       "../src/config/typeorm.config.ts": {
-        "version": "b32931d4b812188e7daaf7f78e1845f070e29cd11c306ddc0f9cb96ca4716250",
+        "version": "b6677aa208c2e4bb0ff4076ab7f1353fe4a80cba3bdfcb40d4468f165de29835",
         "signature": "e48d1e836452920a823efe3c1f15dbaa531cbb2c536b3d47ad06ed5201a8b847",
         "affectsGlobalScope": false
       },
@@ -4941,8 +4941,8 @@
         "affectsGlobalScope": false
       },
       "../src/client/client.entity.ts": {
-        "version": "660d710715c14c82cdab0e1b5bce20f9644b87ae6f0ebd0413ca4bee62d3869f",
-        "signature": "fb14eb53cca2ae64a1a2565fdb965c4e2263af11c98d8a9e40544da6b438e399",
+        "version": "e476aae237658052380d0b6154be6ac2302a73e5b8e3c4b039f184adb6e18f18",
+        "signature": "8544210ae605a47a73a1ca0774f4aab901bf2fcfad58abde67eaa1c6a42b78f4",
         "affectsGlobalScope": false
       },
       "../src/seller/seller.entity.ts": {
@@ -5186,8 +5186,8 @@
         "affectsGlobalScope": false
       },
       "../src/client/client.type.ts": {
-        "version": "a58dee511123917ab16422b6f9311ae3b41270be4cdd4fe128e466ed56224d32",
-        "signature": "782d05b25788b48542b733d66dff8c18b17b6fc61f9fc71d52376c5363c6d753",
+        "version": "c8168e0a8987f92cc0daed861fe2edb2e7efd8d940e17806544f99438f847dfa",
+        "signature": "5c6629461f49884fd732d5a7d60baa83492246cd36f812fe3b38cbc0db8f1328",
         "affectsGlobalScope": false
       },
       "../src/client/client.service.ts": {
