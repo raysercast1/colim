@@ -12,12 +12,13 @@ import { SellerModule } from './seller/seller.module';
 import { ContainerModule } from './container/container.module';
 import { OrderDetailModule } from './order-detail/order-detail.module';
 import { ColorModule } from './color/color.module';
+import { join } from 'path';
 
 @Module({
   imports: [
     TypeOrmModule.forRoot(typeOrmConfig),
     GraphQLModule.forRoot({
-      autoSchemaFile: true,
+      autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
       context: ({req}) => ({req}),
     }),
     ProductModule,

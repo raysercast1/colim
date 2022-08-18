@@ -16,6 +16,9 @@ export class Client extends BaseEntity {
     @Column()
     email: string;
 
+    @Column()
+    me: string;
+
     @OneToMany(() => Purchase, purchase => purchase.client)
     purchase: Purchase[];
 }
