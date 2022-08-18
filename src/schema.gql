@@ -1,0 +1,322 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input ClientInput {
+  name: String!
+  phone: String!
+  email: String!
+}
+
+type ClientType {
+  id: ID!
+  name: String!
+  phone: String!
+  email: String!
+}
+
+input ContainerInput {
+  name: String!
+}
+
+type ContainerType {
+  id: ID!
+  name: String!
+}
+
+type LoginOutPut {
+  accessToken: String!
+}
+
+type Mutation {
+  createProduct(product: ProductInput!): ProductType!
+  updateProduct(product: UpdateProductInput!): ProductType!
+  deleteProduct(productId: Float!): Boolean!
+  createUser(user: UserInput!): UserType!
+  login(password: String!, email: String!): LoginOutPut!
+  createSupplier(supplier: SupplierInput!): SupplierType!
+  updateSupplier(supplier: UpdateSupplierInput!): SupplierType!
+  deleteSupplier(supplierId: Float!): Boolean!
+  createClient(client: ClientInput!): ClientType!
+  updateClient(client: UpdateClientInput!): ClientType!
+  deleteClient(clientId: Float!): Boolean!
+  createPurchase(purchase: PurchaseInput!): PurchaseType!
+  updatePurchase(purchase: UpdatePurchaseInput!): PurchaseType!
+  deletePurchase(purchaseId: Float!): Boolean!
+  createSeller(seller: SellerInput!): SellerType!
+  updateSeller(seller: UpdateSellerInput!): SellerType!
+  deleteSeller(sellerId: Float!): Boolean!
+  createContainer(container: ContainerInput!): ContainerType!
+  updateContainer(container: UpdateContainerInput!): ContainerType!
+  deleteContainer(containerId: Float!): Boolean!
+  createPurchaseDetail(purchaseDetail: PurchaseDetailInput!): PurchaseDetailType!
+  updatePurchaseDetail(purchaseDetail: UpdatePurchaseDetail!): PurchaseDetailType!
+  deletePurchaseDetail(purchaseDetailId: Float!): Boolean!
+}
+
+input ProductInput {
+  fabric: String!
+  fibre: String!
+  fca: Float!
+  clv: Float!
+  key: String!
+  hs: String!
+  positionArc: String!
+  acab: Float!
+  acabado: String!
+  sku: String!
+  csf: Float!
+  crf: Float!
+  pvp: Float!
+  psv: Float!
+  refChina: String!
+  refClient: String!
+  label: String!
+  wide: String!
+  weight: String!
+  composition: String!
+  perfomance: Float!
+  unitMeasure: String!
+  cantMtsFinals: Float!
+  cantKlsFinals: Float!
+  cantMtKl: Float!
+  capMaxKl: Float!
+  mt3: Float!
+  portOcupation: Float!
+  purchaseDetailId: Float
+  supplierId: Float!
+}
+
+type ProductType {
+  id: ID!
+  fabric: String!
+  fibre: String!
+  fca: Float!
+  clv: Float!
+  key: String!
+  hs: String!
+  positionArc: String!
+  acab: Float!
+  acabado: String!
+  sku: String!
+  csf: Float!
+  crf: Float!
+  pvp: Float!
+  psv: Float!
+  refChina: String!
+  refClient: String!
+  label: String!
+  wide: String!
+  weight: String!
+  composition: String!
+  perfomance: Float!
+  unitMeasure: String!
+  cantMtsFinals: Float!
+  cantKlsFinals: Float!
+  cantMtKl: Float!
+  capMaxKl: Float!
+  mt3: Float!
+  portOcupation: Float!
+  purchaseDetailId: Float
+  supplierId: Float!
+}
+
+input PurchaseDetailInput {
+  orderId: Float!
+  productId: Float!
+  colorId: Float!
+  stamp: String!
+  printing: String!
+  paint: String!
+  amountRequired: Float!
+  totalAmount: Float!
+}
+
+type PurchaseDetailType {
+  id: ID!
+  orderId: Float!
+  productId: Float!
+  colorId: Float!
+  stamp: String!
+  printing: String!
+  paint: String!
+  amountRequired: Float!
+  totalAmount: Float!
+}
+
+input PurchaseInput {
+  clientId: Float!
+  sellerId: Float!
+  containerId: Float!
+  subInvoice: Boolean!
+  currency: String!
+  language: String!
+  trm: Float!
+  country: String!
+  productionDate: String!
+  boardingDate: String!
+  taxRefund: Float!
+  iva: Float!
+  retFte: Float!
+}
+
+type PurchaseType {
+  id: ID!
+  clientId: Float!
+  sellerId: Float!
+  containerId: Float!
+  subInvoice: Boolean!
+  currency: String!
+  language: String!
+  trm: Float!
+  country: String!
+  productionDate: String!
+  boardingDate: String!
+  taxRefund: Float!
+  iva: Float!
+  retFte: Float!
+}
+
+type Query {
+  products: [ProductType!]!
+  users: [UserType!]!
+  me: UserType!
+  verifyToken(accessToken: String!): Boolean!
+  suppliers: [SupplierType!]!
+  clients: [ClientType!]!
+  purchases: [PurchaseType!]!
+  sellers: [SellerType!]!
+  containers: [ContainerType!]!
+  purchasesDetails: [PurchaseDetailType!]!
+}
+
+input SellerInput {
+  name: String!
+  phone: String!
+  email: String!
+}
+
+type SellerType {
+  id: ID!
+  name: String!
+  phone: String!
+  email: String!
+}
+
+input SupplierInput {
+  name: String!
+  phone: String!
+  email: String!
+  address: String!
+}
+
+type SupplierType {
+  id: ID!
+  name: String!
+  phone: String!
+  email: String!
+  address: String!
+}
+
+input UpdateClientInput {
+  id: Float!
+  name: String
+  phone: String
+  email: String
+}
+
+input UpdateContainerInput {
+  id: Float!
+  name: String
+}
+
+input UpdateProductInput {
+  id: Float!
+  fabric: String
+  fibre: String
+  fca: Float
+  clv: Float
+  key: String
+  hs: String
+  positionArc: String
+  acab: Float
+  acabado: String
+  sku: String
+  csf: Float
+  crf: Float
+  pvp: Float
+  psv: Float
+  refChina: String
+  refClient: String
+  label: String
+  wide: String
+  weight: String
+  composition: String
+  perfomance: Float
+  unitMeasure: String
+  cantMtsFinals: Float
+  cantKlsFinals: Float
+  cantMtKl: Float
+  capMaxKl: Float
+  mt3: Float
+  portOcupation: Float
+  purchaseDetailId: Float
+  supplierId: Float
+}
+
+input UpdatePurchaseDetail {
+  id: Float!
+  orderId: Float
+  productId: Float
+  colorId: Float
+  stamp: String
+  printing: String
+  paint: String
+  amountRequired: Float
+  totalAmount: Float
+}
+
+input UpdatePurchaseInput {
+  id: Float!
+  clientId: Float
+  sellerId: Float
+  containerId: Float
+  subInvoice: Boolean
+  currency: String
+  language: String
+  trm: Float
+  country: String
+  productionDate: String
+  boardingDate: String
+  taxRefund: Float
+  iva: Float
+  retFte: Float
+}
+
+input UpdateSellerInput {
+  id: Float!
+  name: String
+  phone: String
+  email: String
+}
+
+input UpdateSupplierInput {
+  id: Float!
+  name: String
+  phone: String
+  email: String
+  address: String
+}
+
+input UserInput {
+  username: String!
+  email: String!
+  password: String!
+}
+
+type UserType {
+  id: ID!
+  username: String!
+  email: String!
+  password: String!
+}

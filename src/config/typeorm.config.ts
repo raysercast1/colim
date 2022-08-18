@@ -12,7 +12,7 @@ const synchronize: boolean = config.get('db.synchronize');
 
 export const typeOrmConfig: TypeOrmModuleOptions = {
 
-    type: type,
+    type: 'postgres',
     host: host,
     port: port,
     username: username,

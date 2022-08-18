@@ -14,6 +14,9 @@ export class ClientType {
 
     @Field()
     email: string;
+
+    @Field()
+    me: string;
 }
 
 
